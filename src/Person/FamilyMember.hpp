@@ -1,6 +1,6 @@
-//
-// Created by guillaume on 21/05/19.
-//
+/**
+ * @authors Guillaume Vetter & Luca Reis de Carvalho
+ */
 
 #ifndef SPECIAL_SUCCOTASH_FAMILYMEMBER_HPP
 #define SPECIAL_SUCCOTASH_FAMILYMEMBER_HPP

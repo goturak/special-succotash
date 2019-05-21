@@ -1,6 +1,7 @@
-//
-// Created by guillaume on 21/05/19.
-//
+/**
+ * @authors Guillaume Vetter & Luca Reis de Carvalho
+ */
+
 #include "Son.hpp"
 
 bool Son::validation(list<Person*> *others){

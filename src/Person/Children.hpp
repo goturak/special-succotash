@@ -1,6 +1,6 @@
-//
-// Created by guillaume on 21/05/19.
-//
+/**
+ * @authors Guillaume Vetter & Luca Reis de Carvalho
+ */
 
 #ifndef SPECIAL_SUCCOTASH_CHILDREN_HPP
 #define SPECIAL_SUCCOTASH_CHILDREN_HPP
@@ -8,10 +8,9 @@
 #include "FamilyMember.hpp"
 
 class Children : public FamilyMember{
-protected:
-    Children(string name) : FamilyMember(name){
 
-    }
+protected:
+    Children(string name) : FamilyMember(name){}
 
 public:
     bool canDrive(){
