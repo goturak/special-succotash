@@ -6,7 +6,9 @@
 #define SPECIAL_SUCCOTASH_BANK_HPP
 
 
-class Bank {
+#include "Container.hpp"
+
+class Bank : public Container {
 
 };
 

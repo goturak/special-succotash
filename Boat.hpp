@@ -6,7 +6,10 @@
 #define SPECIAL_SUCCOTASH_BOAT_HPP
 
 
-class Boat {
+#include "Container.hpp"
+
+class Boat : public Container{
+
 
 };
 
