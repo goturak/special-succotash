@@ -38,9 +38,13 @@ Bank* Boat::getCurrentBank(){
 }
 
 bool Boat::embark(Person *p) {
-    if(getPerson()->size() < 2){
-        push_back(p);
-        currentBank->pop(p);
+    if (currentBank->contains(p)) {
+        if (getPerson()->size() < 2) {
+            push_back(p);
+            currentBank->pop(p);
+        } else {
+            return false;
+        }
     } else {
         return false;
     }
@@ -48,5 +52,15 @@ bool Boat::embark(Person *p) {
 }
 
 bool Boat::debark(Person *p) {
-
+    if(contains(p)) {
+        if (getPerson()->size() != 0) {
+            currentBank->push_back(p);
+            pop(p);
+        } else {
+            return false;
+        }
+    } else {
+        return false;
+    }
+    return true;
 }

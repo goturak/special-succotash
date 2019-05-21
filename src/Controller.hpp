@@ -27,7 +27,7 @@ private:
 
 
 public:
-    Controller() : bankRight(), bankLeft(), boat(&bankLeft, &bankRight), turn(0){
+    Controller() : bankRight(), bankLeft(), boat(&bankLeft, &bankRight), turn(-1){
         bankLeft.push_back(new Father("pere"));
         bankLeft.push_back(new Mother("mere"));
         bankLeft.push_back(new Son("paul"));
@@ -38,7 +38,6 @@ public:
         bankLeft.push_back(new Robber("voleur"));
         showMenu();
         display();
-
     }
 
     void showMenu();
@@ -48,6 +47,8 @@ public:
     bool nextTurn();
 private:
     void reset();
+
+    bool validate();
 
 };
 

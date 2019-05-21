@@ -18,40 +18,15 @@ private:
 protected:
     Container() : persons(new list<Person*>){}
 public:
-    list<Person*>* getPerson(){
-        return persons;
-    }
+    list<Person*>* getPerson();
 
-    void push_back(Person *p){
-        persons->push_back(p);
-    }
+    void push_back(Person *p);
 
-    Person* pop(Person *p){
-        list<Person*>::iterator result = std::find(persons->begin(), persons->end(), p);
-        if(result == persons->end()){
-            return nullptr;
-        }
-        persons->remove(p);
-        return *result;
-    }
+    Person* pop(Person *p);
 
-    Person* find(string name){
-        for(list<Person*>::iterator it = persons->begin(); it != persons->end(); it++){
-            if((*it)->toString()== name){
-                return *it;
-            }
-        }
-        return nullptr;
-    }
+    Person* find(string name);
 
-    bool contains(string name){
-        for(list<Person*>::iterator it = persons->begin(); it != persons->end(); it++){
-            if((*it)->toString() == name){
-                return true;
-            }
-        }
-        return false;
-    }
+    bool contains(Person *p);
 
 
 };

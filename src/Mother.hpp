@@ -5,16 +5,18 @@
 #ifndef SPECIAL_SUCCOTASH_MOTHER_HPP
 #define SPECIAL_SUCCOTASH_MOTHER_HPP
 
+#include <typeinfo>
 #include "FamilyMember.hpp"
 
 class Mother : public FamilyMember{
-
 public:
-    Mother(string name) : FamilyMember(name){
-
-    }
+    Mother(string name) : FamilyMember(name){ }
 
     bool canDrive(){
+        return true;
+    }
+
+    bool validation(list<Person*> *others){
         return true;
     }
 };

@@ -6,7 +6,10 @@
 #define SPECIAL_SUCCOTASH_ROBBER_HPP
 
 
-#include "Person.hpp"
+#include <list>
+#include "Policeman.hpp"
+#include "FamilyMember.hpp"
+#include <iostream>
 
 class Robber : public Person{
 public:
@@ -15,6 +18,8 @@ public:
     bool canDrive(){
         return false;
     }
+
+    bool validation(list<Person*> *others);
 
 };
 
