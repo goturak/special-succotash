@@ -25,6 +25,8 @@ public:
         return name;
     }
 
+    virtual bool validation(list<Person*> *others) = 0;
+
     friend bool operator==(const Person &a, const Person &b){
         return a.toString() == b.toString();
     }
