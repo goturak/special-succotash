@@ -6,7 +6,13 @@
 #define SPECIAL_SUCCOTASH_ROBBER_HPP
 
 
-class Robber {
+#include "Person.hpp"
+
+class Robber : public Person{
+public:
+    bool canDrive(){
+        return true;
+    }
 
 };
 

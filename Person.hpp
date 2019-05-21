@@ -18,9 +18,7 @@ public:
         this->name = name;
     }
 
-    bool canDrive(){
-        return true;
-    }
+    virtual bool canDrive() = 0;
 };
 
 
