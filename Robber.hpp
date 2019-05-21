@@ -10,8 +10,10 @@
 
 class Robber : public Person{
 public:
+    Robber(string name) : Person(name){}
+
     bool canDrive(){
-        return true;
+        return false;
     }
 
 };

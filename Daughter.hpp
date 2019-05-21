@@ -5,10 +5,11 @@
 #ifndef SPECIAL_SUCCOTASH_DAUGHTER_HPP
 #define SPECIAL_SUCCOTASH_DAUGHTER_HPP
 
-#include "FamilyMember.hpp"
+#include "Children.hpp"
 
-class Daughter : public FamilyMember{
-
+class Daughter : public Children{
+public:
+    Daughter(string name) : Children(name){}
 };
 
 #endif //SPECIAL_SUCCOTASH_DAUGHTER_HPP

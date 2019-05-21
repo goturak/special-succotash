@@ -8,6 +8,8 @@
 #include "Children.hpp"
 
 class Son : public Children{
+public:
+    Son(string name) : Children(name){}
 
 };
 

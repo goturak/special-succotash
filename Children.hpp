@@ -8,9 +8,12 @@
 #include "FamilyMember.hpp"
 
 class Children : public FamilyMember{
+protected:
+    Children(string name) : FamilyMember(name){
+
+    }
 
 public:
-
     bool canDrive(){
         return false;
     }

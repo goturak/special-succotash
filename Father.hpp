@@ -9,6 +9,10 @@
 
 class Father : public FamilyMember{
 public:
+    Father(string name) : FamilyMember(name){
+
+    }
+
     bool canDrive(){
         return true;
     }

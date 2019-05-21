@@ -9,6 +9,8 @@
 
 class Policeman : public Person{
 public:
+    Policeman(string name) : Person(name){}
+
     bool canDrive(){
         return true;
     }

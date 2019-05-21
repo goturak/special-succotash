@@ -13,12 +13,25 @@ class Person {
 private:
     string name;
 
-public:
+protected:
     Person(string name){
         this->name = name;
     }
 
+public:
     virtual bool canDrive() = 0;
+
+    string toString() const{
+        return name;
+    }
+
+    friend bool operator==(const Person &a, const Person &b){
+        return a.toString() == b.toString();
+    }
+
+    friend bool operator!=(const Person &a, const Person &b){
+        return !(a.toString() == b.toString());
+    }
 };
 
 

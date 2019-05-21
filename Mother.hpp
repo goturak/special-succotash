@@ -10,6 +10,10 @@
 class Mother : public FamilyMember{
 
 public:
+    Mother(string name) : FamilyMember(name){
+
+    }
+
     bool canDrive(){
         return true;
     }

@@ -9,7 +9,8 @@
 #include "Container.hpp"
 
 class Bank : public Container {
-
+public:
+    Bank() : Container(){}
 };
 
 

@@ -7,9 +7,27 @@
 
 
 #include "Container.hpp"
+#include "Bank.hpp"
 
 class Boat : public Container{
+private:
+    Bank* left;
+    Bank* right;
+    Bank* currentBank;
+public:
+    Boat(Bank* l, Bank* r) : Container(), left(l), right(r), currentBank(l){ }
 
+    bool hasDriver();
+
+    bool isLeft();
+
+    bool move();
+
+    Bank* getCurrentBank();
+
+    bool embark(Person *p);
+
+    bool debark(Person *p);
 
 };
 
