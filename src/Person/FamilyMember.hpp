@@ -7,8 +7,15 @@
 
 #include "Person.hpp"
 
+/**
+ * Abstract class representing a family member, inheriting from person.
+ */
 class FamilyMember : public Person{
 protected:
+    /**
+     * Protected constructor, taking a name as parameter, and calling Person's constructor.
+     * @param name the name of the family member.
+     */
     FamilyMember(string name) : Person(name){}
 };
 
